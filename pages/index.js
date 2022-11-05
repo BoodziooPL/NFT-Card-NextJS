@@ -15,41 +15,45 @@ export default function Home() {
       </Head>
       <main>
         <section className=' bg-ownBlue-900 w-full h-[100vh] flex justify-center items-center'>
-          <div className=' bg-ownBlue-800 w-[80vw] h-[80vh] rounded-2xl flex-col'>
+          <div className=' bg-ownBlue-800 w-[80vw] h-[80vh] rounded-2xl flex-col md:w-[60vw] md:h-[90vh] lg:w-[30vw]'>
             <div className='w-50  mx-auto mt-5 flex justify-center '>
               <Image
                 src={mainBgc}
                 className='rounded-xl object-contain w-[80%]'
               />
             </div>
-            <h1 className=' text-white text-xl font-bold w-[80%] mx-auto mt-5'>
+            <h1 className=' text-white text-xl font-bold w-[80%] mx-auto mt-5 md:text-4xl hover:text-ownBlue-500 cursor-pointer md:mt-8 lg:text-2xl'>
               Equilibrium #3429
             </h1>
-            <p className=' text-ownBlue-600 text-sm  w-[80%] mx-auto leading-6 mt-3'>
+            <p className=' text-ownBlue-600 text-sm  w-[80%] mx-auto leading-6 mt-3 md:text-2xl lg:text-lg'>
               Our Equilibrium collection promotes balance and calm.
             </p>
-            <div className='w-[80%] flex mx-auto mt-5 justify-between  '>
+            <div className='w-[80%] flex mx-auto mt-5 justify-between md:mt-10 '>
               <div className='flex'>
-                <Image src={etherum} className='object-contain' />
-                <span className='ml-2 text-ownBlue-500 font-bold'>
+                <Image src={etherum} className='object-contain md:w-6 lg:w-3' />
+                <span className='ml-2 text-ownBlue-500 font-bold md:text-2xl lg:text-lg'>
                   0.0014ETH
                 </span>
               </div>
 
               <div className=' flex justify-between'>
-                <Image src={clock} className='object-contain' />
-                <p className='text-ownBlue-600 ml-2'>3days left</p>
+                <Image src={clock} className='object-contain md:w-8 lg:w-6' />
+                <p className='text-ownBlue-600 ml-2 md:text-2xl lg:text-lg'>
+                  3days left
+                </p>
               </div>
             </div>
-            <div className='border-t border-ownBlue-700 w-[80%] mx-auto mt-5 '></div>
-            <div className='w-[80%] h-[15%] text-xs flex justify-center items-center mt-5'>
+            <div className='border-b border-ownBlue-700 w-[80%] mx-auto mt-5 md:mt-5 lg:mt-5 lg:border-ownBlue-700 lg:border-t'></div>
+            <div className='w-[80%] h-[15%] text-xs flex justify-center items-center mt-5 md:w-[90%]'>
               <Image
                 src={avatar}
-                className='object-contain w-[20%] border-2 rounded-full'
+                className='object-contain w-[20%] border-2 rounded-full md:w-[15%] lg:w-10'
               />
-              <p className=' text-ownBlue-600 ml-3'>
+              <p className=' text-ownBlue-600 ml-3 md:text-2xl cursor-pointer lg:text-xl'>
                 Creation of{' '}
-                <span className='text-white font-bold'>Jules Wyvern</span>{' '}
+                <span className='text-white font-bold hover:text-ownBlue-500'>
+                  Jules Wyvern
+                </span>{' '}
               </p>
             </div>
           </div>
