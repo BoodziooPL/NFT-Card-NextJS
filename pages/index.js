@@ -22,10 +22,10 @@ export default function Home() {
                 className='rounded-xl object-contain w-[80%]'
               />
             </div>
-            <h1 className=' text-white text-2xl font-bold w-[80%] mx-auto mt-5'>
+            <h1 className=' text-white text-xl font-bold w-[80%] mx-auto mt-5'>
               Equilibrium #3429
             </h1>
-            <p className=' text-ownBlue-600 text-md  w-[80%] mx-auto'>
+            <p className=' text-ownBlue-600 text-sm  w-[80%] mx-auto leading-6 mt-3'>
               Our Equilibrium collection promotes balance and calm.
             </p>
             <div className='w-[80%] flex mx-auto mt-5 justify-between  '>
@@ -37,10 +37,11 @@ export default function Home() {
               </div>
 
               <div className=' flex justify-between'>
-                <Image src={clock} className='object-fit' />
+                <Image src={clock} className='object-contain' />
                 <p className='text-ownBlue-600 ml-2'>3days left</p>
               </div>
             </div>
+            <div className='border-t border-ownBlue-700 w-[80%] mx-auto mt-5 '></div>
             <div className='w-[80%] h-[15%] text-xs flex justify-center items-center mt-5'>
               <Image
                 src={avatar}
